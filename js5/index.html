@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop() > 300){
+                    $('i').css({
+                        "opacity":"1", "pointer-events":"auto"
+                    });
+                }else{
+                    $('i').css({
+                        "opacity":"0", "pointer-events":"none"
+                    });           
+                }
+            });
+
+            $('i').click(function(){
+                $('html').animate({scrollTop:0},500)
+            })
+        });
+    </script>
+
+</head>
+<body>
+
+    <i class="fa-solid fa-chevron-up"></i>
+ <section class="sec1"></section>
+ <h1>Scroll Top Button</h1>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, in quae. Aperiam, aliquam! Officiis numquam nam tempore laborum consequatur excepturi architecto facilis officia? Vitae magnam natus ipsa. Debitis atque iure possimus. Vitae quaerat culpa veritatis minus perferendis, omnis facilis sequi tempore suscipit quia nesciunt voluptatibus ratione exercitationem rerum illum doloremque voluptate rem. Earum consectetur repudiandae reprehenderit, nobis alias autem ratione inventore dolore aliquam laboriosam ipsa dignissimos sit sunt unde debitis, sed molestias quibusdam, delectus quod soluta sint optio quisquam. Autem alias, dicta rerum sequi asperiores cupiditate commodi accusantium molestias, culpa saepe provident odio debitis ab hic possimus at deleniti adipisci minus magni! Porro exercitationem non repellendus nisi, illum consequatur, quia impedit iure cumque molestiae mollitia praesentium aliquam delectus ut voluptates nemo quasi necessitatibus fuga reprehenderit. Illum, nihil. Debitis quisquam eos voluptatibus incidunt dolores illum adipisci iure culpa enim perferendis blanditiis at placeat ipsum sunt et quo, deserunt necessitatibus sapiente. Non.</p>
+    
+ <section class="sec2"></section>
+ <h1>Scroll Top Button</h1>
+ <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus neque quisquam ducimus numquam earum. Saepe consectetur maxime, nemo molestias aliquid sed soluta pariatur dolorum distinctio voluptates non aut veniam magni obcaecati ipsum, velit blanditiis nihil? Nam cum amet fuga sunt esse architecto harum ea repudiandae repellendus explicabo corrupti incidunt placeat, beatae dolorum maiores adipisci at reiciendis libero qui fugiat sapiente maxime. Illo ex cumque ipsum placeat voluptatibus accusamus quisquam obcaecati similique, quam cum hic? Ea libero nesciunt iure sunt? In facere dicta impedit saepe facilis dolores dolore, voluptatibus soluta asperiores nihil nobis non maiores itaque. Deleniti quae minus blanditiis commodi quibusdam ullam quisquam soluta, culpa rem odit quos dignissimos vero laudantium itaque expedita. Cum, natus odit qui nostrum enim, architecto assumenda incidunt sapiente sint in repudiandae aspernatur porro aperiam doloribus illo omnis, veritatis harum doloremque autem a. Iusto similique sequi eos! Esse at in sunt commodi quasi, illo nemo inventore.</p>
+    <script src="script.js"></script>
+
+</body>
+</html>

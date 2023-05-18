@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+     font-family: sans-serif; 
+}
+
+html, body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #0677b8;
+}
+
+main{
+    position: relative;
+    height: 60px;
+    width: 400px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+main .btn1{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    color:brown;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265,1.55);
+ 
+}
+#click:checked ~ .btn1{
+    height: 40px;
+    width: 100px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+main .field{
+    height: 100%;
+    width:0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265,1.55);
+}
+
+main #click{
+    display: none;
+}
+
+#click:checked ~ .field{
+    width: 100%;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+main .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0px 130px 0px 15px;
+    font-size: 20px;
+}
+
+main .field .btn2{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    background-color: #0677b8;
+    line-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+

@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: sans-serif;
+}
+
+html, body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+}
+
+main{
+    padding: 20px 40px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.23);
+}
+
+
+main .text{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+main p{
+    font-size: 20px;
+    font-weight:500;
+    line-height: 20px;
+}
+
+main .btns{
+    display: flex;
+    margin: 30px 0px 20px 0px;
+}
+
+main .btns a{
+    position: relative;
+    height: 60px;
+    width: 200px;
+    display: block;
+    margin: 0px 20px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+
+    border-radius: 30px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.23);
+    text-transform: uppercase;
+
+    overflow: hidden;
+}
+
+main .btns a:first-child{
+    background: linear-gradient(-90deg,#f5ce62,#e85a19 );
+}
+
+main .btns a:last-child{
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+
+main .btns a > span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ripples 0.6s linear infinite;
+}
+
+@keyframes ripples {
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100%{
+        height: 500px;
+        width: 500px;
+        opacity: 0;
+
+    }
+}

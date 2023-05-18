@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salma Begum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('i').click(function(){
+
+                $('ul').toggleClass("ul_show");
+                $('.common_section').toggleClass('slide_image');
+            });
+            $('li').click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+  
+    
+    <ul>
+        <li class="active"><a href="#">Salma Begum</a></li>
+        <li><a href="#sec1">Image 1</a></li>
+        <li><a href="#sec2">Image 2</a></li>
+        <li><a href="#sec3">Image 3</a></li>
+        <li><a href="#sec4">Image 4</a></li>
+        <li><a href="#sec5">Image 5</a></li>
+        <li><a href="#sec6">Image 6</a></li>
+        <li><a href="#sec7">Image 7</a></li>
+        <li><a href="#sec8">Image 8</a></li>
+        <li><a href="#sec9">Image 9</a></li>
+        <li><a href="#sec10">Image 10</a></li>
+        <li><a href="#sec11">Image 11</a></li>
+        <li><a href="#sec12">Image 12</a></li>
+        <li><a href="#sec13">Image 13</a></li>
+        <li><a  href="#sec14">Image 14</a></li>
+
+
+        
+         
+    </ul>
+
+    <section class="common_section">
+        <i class="fa-solid fa-bars"></i>
+       
+         
+        
+        <section id="sec1"></section>
+         
+        <section id="sec2"></section>
+        
+        <section id="sec3"></section>
+        
+        <section id="sec4"></section>
+        
+        <section id="sec5"></section>
+        
+        <section id="sec6"></section>
+        
+        <section id="sec7"></section>
+           
+        <section id="sec8"></section>
+         
+        <section id="sec9"></section>
+        
+        <section id="sec10"></section>
+        
+        <section id="sec11"></section>
+        
+        <section id="sec12"></section>
+        
+        <section id="sec13"></section>
+        
+    
+
+    </section>
+
+    
+
+</body>
+</html>
